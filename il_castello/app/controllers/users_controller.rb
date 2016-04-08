@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   # GET /users
   def index
     @users = User.all
-
     @userCreation = User.new
   end
 
@@ -12,10 +11,6 @@ class UsersController < ApplicationController
     @users = User.find(params[:id])
   end
 
-  #GET /users/new
-  def new
-    @user = User.new
-  end
 
   #POST /users
   def create
