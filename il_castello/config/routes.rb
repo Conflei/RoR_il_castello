@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+  resources :users #resources = CRUD
+
+  get '/users'      # index
+  post '/users'     # create
+  #delete '/users'  # delete
+  #get '/users/:id' # show
+  #get 'users/new'  # new
+  #get 'users/:id/edit' # edit
+  #patch '/users/:id' # update
+  #put '/users/:id' # update
+
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
