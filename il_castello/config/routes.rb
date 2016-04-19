@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :catalagos
   resources :users #resources = CRUD, genera todo lo que esta abajo
 
   #get '/users'      # index

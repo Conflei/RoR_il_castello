@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Catalagos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vehicle</th>
+      <th>Description</th>
+      <th>Photo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @catalagos.each do |catalago| %>
+      <tr>
+        <td><%= catalago.vehicle %></td>
+        <td><%= catalago.description %></td>
+        <td><%= catalago.photo %></td>
+        <td><%= link_to 'Show', catalago %></td>
+        <td><%= link_to 'Edit', edit_catalago_path(catalago) %></td>
+        <td><%= link_to 'Destroy', catalago, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Catalago', new_catalago_path %>

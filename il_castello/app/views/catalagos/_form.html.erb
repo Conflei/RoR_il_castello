@@ -1,0 +1,29 @@
+<%= form_for(@catalago) do |f| %>
+  <% if @catalago.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@catalago.errors.count, "error") %> prohibited this catalago from being saved:</h2>
+
+      <ul>
+      <% @catalago.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :vehicle %><br>
+    <%= f.text_field :vehicle %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %><br>
+    <%= f.text_field :photo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
