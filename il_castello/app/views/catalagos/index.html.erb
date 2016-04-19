@@ -1,4 +1,41 @@
-<p id="notice"><%= notice %></p>
+ <div class="jumbotron" style ="text-align:center;background: linear-gradient(#0E0D0A, #CEA420);/* padding-bottom: 0px; *//* color: #FDC725; */border-bottom: solid 4px;color: #FDC725;";>
+    <h1 style="margin-bottom: 3%;color: white;">Consecionario Il Castello</h1>      
+    <p style="color:white">Ofrecemos variedad en modelos de autos lamborghini</p>
+</div>
+
+  <section class="wrapper style1">
+          <div class="container">
+              <div class="row">
+                   <% (1..2).each do |i| %>
+                        <section class="6u 12u(narrower)" style="border: solid 3px;border-style: groove;border-radius: 15px; margin-left: 2%;">
+                            <div class="box post">
+                              <%= link_to image_tag("catalogo/" << i.to_s << ".jpg"), root_path, :class  => "image left" %>
+                                <div class="inner" style="margin-left: 52%;">
+                                    <h3>The First Thing</h3>
+                                    <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+                                 </div>
+                            </div>
+                             <div style="text-align: center; margin-bottom: 13px;">
+                                <a type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span>Ver</a>
+                              </div>
+                          </section>
+                                
+                      <%end%> 
+                  </div>
+              </div>
+           
+
+  </section>
+  <script> 
+    $(document).ready(function(){
+       $(".active").removeClass("active");
+       var li = $($(".navbar-nav")[0]).find("li")[1];
+       $(li).addClass("active");
+    });
+
+  </script>
+
+<!--<p id="notice"><%= notice %></p>
 
 <h1>Listing Catalagos</h1>
 
@@ -29,3 +66,4 @@
 <br>
 
 <%= link_to 'New Catalago', new_catalago_path %>
+-->

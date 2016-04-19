@@ -405,7 +405,7 @@
 	}
 
 	.\36 u, .\36 u\24 {
-		width: 50%;
+		width: 46%;
 		clear: none;
 		margin-left: 0;
 	}
@@ -502,7 +502,7 @@
 	@media screen and (max-width: 1680px) {
 
 		.row > * {
-			padding: 40px 0 0 40px;
+			padding: 39px 0px 0px 15px;
 		}
 
 		.row {
@@ -2327,7 +2327,7 @@
 			}
 
 		.box.post .image {
-			width: 30%;
+			width: 50%;
 			margin: 0;
 		}
 
