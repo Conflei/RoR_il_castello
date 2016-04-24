@@ -20,6 +20,9 @@
 
 </head>
 <body style="padding:0px; margin:0px; background-color:#fff;font-family:Arial, sans-serif">
+
+
+
 	<span class="ir-arriba glyphicon glyphicon-arrow-up" style="display: block;"></span>
 		<div class ="contenido">
 			<nav class="navbar navbar-inverse" id="gen-nav">
@@ -47,16 +50,17 @@
 							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Cont&aacute;ctanos</a></li>
 							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-pencil"></span>&nbsp;CMS</a></li>
 						  </ul>
-						  <ul class="nav navbar-nav navbar-right">
-							<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-							<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-						  </ul>
+							
+						  <%= render "partials/session"%>
 						</div>
 
 					</form>
 			  </div>
 			</nav>
 			<hr id ="divisor">
+
+			<p class="notice"><%= notice %></p>
+		  <p class="alert"><%= alert %></p>
 
 		<%= yield %>
 
