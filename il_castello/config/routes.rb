@@ -2,10 +2,10 @@ Rails.application.routes.draw do
 
   resources :users #resources = CRUD, genera todo lo que esta abajo
 
-  get '/users'      # index
-  post '/users'     # create
+  #get '/users'      # index
+  #post '/users'     # create
   #delete '/users'  # delete
-  get '/users/:id' # show
+  #get '/users/:id' # show
   #get 'users/new'  # new
   #get 'users/:id/edit' # edit
   #patch '/users/:id' # update
