@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
   resources :templates
+  devise_for :users
+  devise_for :clients
   resources :catalagos
-  resources :users #resources = CRUD, genera todo lo que esta abajo
+  #resources :users #resources = CRUD, genera todo lo que esta abajo
 
   #get '/users'      # index
   #post '/users'     # create
