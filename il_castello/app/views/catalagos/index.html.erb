@@ -27,11 +27,13 @@
 
   </section>
   <script>
-    $(document).ready(function(){
+  $(document).ready(function(){
        //$(".active").css("")
+       $(".active>a").css("border-bottom","solid 4px #222222");
        $(".active").removeClass("active");
        var li = $($(".navbar-nav")[0]).find("li")[1];
        $(li).addClass("active");
+       $(".active>a").css("border-bottom","solid 3px #F3C848");
 
     });
 

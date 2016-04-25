@@ -61,6 +61,11 @@ class CatalagosController < ApplicationController
     end
   end
 
+    def mimetodo
+        @catalagos = Catalago.all
+        render 'index'
+    end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_catalago
@@ -71,4 +76,7 @@ class CatalagosController < ApplicationController
     def catalago_params
       params.require(:catalago).permit(:vehicle, :description, :photo)
     end
+
 end
+
+

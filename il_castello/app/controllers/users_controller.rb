@@ -11,11 +11,7 @@ class UsersController < ApplicationController
     @users = User.find(params[:id])
   end
 
-def mimetodo
 
-  @user = User.find(params[:usuario_id])
-  render 'edit'
-end
   #POST /users
   def create
 
