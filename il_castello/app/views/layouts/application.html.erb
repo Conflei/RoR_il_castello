@@ -44,13 +44,15 @@
 								<li class="active"><a href="/" style="border-bottom: #222222;" onclick="document.getElementById('myForm').submit();"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
 
 
-							<li><a href="catalagos" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-book"></span>&nbsp;Cat&aacute;logo</a></li>
-							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Servicios</a></li>
-							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-hand-up"></span>&nbsp;Con&oacute;cenos</a></li>
-							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Cont&aacute;ctanos</a></li>
-							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-pencil"></span>&nbsp;CMS</a></li>
+							<li><a href="catalagos" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-book"></span>&nbsp;Cars</a></li>
+							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Services</a></li>
+							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-hand-up"></span>&nbsp;About us</a></li>
+							<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</a></li>
+							<% if user_signed_in?%>
+								<li><a href="#" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-pencil"></span>&nbsp;CMS</a></li>
+							<%end%>
 						  </ul>
-							
+
 						  <%= render "partials/session"%>
 						</div>
 
