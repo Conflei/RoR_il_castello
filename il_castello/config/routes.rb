@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get 'conocenos/' => 'templates#conocenos', as: :conocenos
   get 'contactanos/' => 'templates#contactanos', as: :contactanos
   get 'CMS/' => 'templates#CMS', as: :CMS
+  get 'profile/' => "users#profile"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

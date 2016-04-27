@@ -25,4 +25,8 @@ class UsersController < ApplicationController
     redirect_to index
   end
 
+  def profile
+    render "devise/profile"
+  end
+
 end
