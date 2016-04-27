@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :configure_devise_permitted_parameters, if: :devise_controller?
+  before_action :init
 
 protected
 
@@ -19,6 +20,10 @@ protected
           |u| u.permit(registration_params)
         }
       end
+  end
+
+  def init
+    @views = Template.all
   end
 
 end

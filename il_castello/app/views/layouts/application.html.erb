@@ -45,6 +45,11 @@
 							<li><a href="servicios" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Services</a></li>
 							<li><a href="conocenos" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-hand-up"></span>&nbsp;About us</a></li>
 							<li><a href="contactanos" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;Contact</a></li>
+							<%if @views.size > 0%>
+									<% @views.each do |view|%>
+										<li><%=link_to view.title, controller: "templates", action: "show", id: view.id, class: "bar-item"%></li>
+									<%end%>
+							<%end%>
 							<% if user_signed_in?%>
 								<li><a href="CMS" style="border-bottom: solid #222222;"><span class="glyphicon glyphicon-pencil"></span>&nbsp;CMS</a></li>
 							<%end%>

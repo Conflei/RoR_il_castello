@@ -1,8 +1,14 @@
 class ShowcarsController < ApplicationController
   before_action :set_showcar, only: [:show, :edit, :update, :destroy]
   #before_action :init
+  before_action :initvar
 
   @initialized = false
+
+  def initvar
+    @views = Template.all
+  end
+
 
   #i'm creating 3 cars to the showcar
   def init

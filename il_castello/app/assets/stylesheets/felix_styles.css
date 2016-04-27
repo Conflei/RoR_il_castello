@@ -84,3 +84,25 @@
   display: block;
   padding: 10px 0px;  padding:
 }
+.bar-item
+{
+  border-bottom: solid #222222;
+}
+
+.view-content
+{
+  color: grey;
+}
+.show-view
+{
+  font-size: 65px;
+}
+.show-view h1
+{
+  border-bottom: 0px;
+}
+
+.show-view p
+{
+  font-size: 30px;
+}
