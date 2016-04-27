@@ -13,6 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160426040751) do
 
+
   create_table "car_images", force: :cascade do |t|
     t.string   "id_Car"
     t.string   "picture"
@@ -101,6 +102,14 @@ ActiveRecord::Schema.define(version: 20160426040751) do
     t.string   "picture"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+  end
+
+  create_table "templates", force: :cascade do |t|
+    t.string   "title"
+    t.string   "content"
+    t.string   "urlImage"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

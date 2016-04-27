@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @showcar.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @showcar.description %>
+</p>
+
+<p>
+  <strong>Photo link:</strong>
+  <%= @showcar.photo_link %>
+</p>
+
+<%= link_to 'Edit', edit_showcar_path(@showcar) %> |
+<%= link_to 'Back', showcars_path %>

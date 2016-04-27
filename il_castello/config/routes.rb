@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :showcars
   devise_for :users
   devise_for :clients
-  resources :catalagos
+  resources :templates
   #resources :users #resources = CRUD, genera todo lo que esta abajo
 
   #get '/users'      # index
@@ -22,12 +22,17 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
-  get 'mimetodousuario/:usuario_id' => 'user#mimetodo', as: :mimetodo
+ # get 'servicios/:usuario_id' => 'catalagos#mimetodo', as: :mimetodo
+
+  get 'servicios/' => 'templates#servicios', as: :servicios
+  get 'conocenos/' => 'templates#conocenos', as: :conocenos
+  get 'contactanos/' => 'templates#contactanos', as: :contactanos
+  get 'CMS/' => 'templates#CMS', as: :CMS
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+   #  get 'mimetodo/' => 'catalog#mimetodo', as: :mimetodo
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
