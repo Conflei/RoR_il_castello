@@ -12,7 +12,9 @@
   <% end %>
 
   <div class="imageView">
-    <%= link_to image_tag("showcar/" << @showcar.photo_link), root_path, :class  => "image left" %>
+    <%if @showcar.photo_link != nil %>
+      <%= link_to image_tag("showcar/" << @showcar.photo_link), root_path, :class  => "image left" %>
+    <%end%>
   </div>
 
   <div class="field">
@@ -27,6 +29,7 @@
     <%= f.label :photo_link %><br>
     <%= f.text_field :photo_link , class: "form-control"%>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

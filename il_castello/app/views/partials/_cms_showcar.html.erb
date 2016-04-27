@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
-
 <div class="inner-cms">
 
-  <h1 class="cms-h1">Listing Showcars</h1>
+  <h1 class="cms-h1">Listing Showcar</h1>
   <div class="row">
 
 
@@ -38,24 +37,3 @@
   </div>
 
 <br>
-
-
-
-<div class="jumbotron" style ="text-align:center;background: linear-gradient(#0E0D0A, #CEA420);/* padding-bottom: 0px; *//* color: #FDC725; */border-bottom: solid 4px;color: #FDC725;";>
-   <h1 style="margin-bottom: 3%;color: white;">Our Cars - Il Castello</h1>
-   <h4 style="color:white">Lamborghini's Official Dealer</h4>
-</div>
-
-<%= render "partials/cars_view"%>
-
- </section>
- <script>
-   $(document).ready(function(){
-      //$(".active").css("")
-      $(".active").removeClass("active");
-      var li = $($(".navbar-nav")[0]).find("li")[1];
-      $(li).addClass("active");
-
-   });
-
- </script>
