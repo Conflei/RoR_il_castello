@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :showcars
   devise_for :users
   devise_for :clients
   resources :catalagos

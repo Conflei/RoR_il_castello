@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160424060747) do
+ActiveRecord::Schema.define(version: 20160426040751) do
 
   create_table "car_images", force: :cascade do |t|
     t.string   "id_Car"
@@ -75,6 +75,14 @@ ActiveRecord::Schema.define(version: 20160424060747) do
     t.boolean  "static"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
+  end
+
+  create_table "showcars", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "photo_link"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|
