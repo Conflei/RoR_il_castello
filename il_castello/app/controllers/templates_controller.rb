@@ -71,6 +71,8 @@ class TemplatesController < ApplicationController
   end
 
   def CMS
+    @showcars = Showcar.all
+    @templates = Template.all
   end
 
   private
